@@ -8,13 +8,14 @@ mostrar_menu() {
   echo "|   1. Atualizar o sistema                    |"
   echo "|   2. Installar Flatpak                      |"
   echo "|   3. Instalar Ubuntu Restricted Extras      |"
-  echo "|   4. Instalar Google Chrome                 |"
-  echo "|   5. Disable Keyring Popup                  |"
-  echo "|   6. Install Steam                          |"
-  echo "|   7. Instalar Git                           |"
-  echo "|   8. Instalar Virt-Manager                  |"
-  echo "|   9. Instalar VirtualBox                    |"
-  echo "|   10. Installar TLP Battery                 |"
+  echo "|   4. Instalar Kubuntu Restricted Extras     |"
+  echo "|   5. Instalar Google Chrome                 |"
+  echo "|   6. Disable Keyring Popup                  |"
+  echo "|   7. Install Steam                          |"
+  echo "|   8. Instalar Git                           |"
+  echo "|   9. Instalar Virt-Manager                  |"
+  echo "|   10. Instalar VirtualBox                   |"
+  echo "|   11. Installar TLP Battery                 |"
   echo "|   q. Sair                                   |"
   echo "+---------------------------------------------+"
 
@@ -41,37 +42,41 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_ubuntu_restricted_extras/install_ubuntu_restricted_extras.sh -O -)"
       ;;
     4)
-      # Opção 4. Instalar Google Chrome
+      # Opção 4. Instalar Kubuntu Restricted Extras
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_kubuntu_restricted_extras/install_kubuntu_restricted_extras.sh -O -)"
+      ;;
+    5)
+      # Opção 5. Instalar Google Chrome
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_google_chrome/install_google_chrome.sh -O -)"
       
       ;;
-    5)
-      # Opção 5. Disable Keyring Popup
+    6)
+      # Opção 6. Disable Keyring Popup
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/disable_keyring_popup/disable_keyring_popup.sh -O -)"
       
       ;;
-    6)
-      # Opção 6. Install Steam
+    7)
+      # Opção 7. Install Steam
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_steam/install_steam.sh -O -)"
       
       ;;
-    7)
-      # Opção 7. Instalar Git
+    8)
+      # Opção 8. Instalar Git
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_git/install_git_ubuntu.sh -O -)"
       
       ;;
-    8)
-      # Opção 8. Instalar Virt-Manager
+    9)
+      # Opção 9. Instalar Virt-Manager
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_virt_manager/install_virt_manager.sh -O -)"
       
       ;;
-    9)
-      # Opção 9. Instalar VirtualBox
+    10)
+      # Opção 10. Instalar VirtualBox
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_virtualbox/install_virtualbox.sh -O -)"
       
       ;;
-    10)
-      # Opção 10. Installar TLP Battery
+    11)
+      # Opção 11. Installar TLP Battery
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_tlp_battery/install_tlp_battery.sh -O -)"
       
       ;;
