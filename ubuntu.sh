@@ -30,44 +30,53 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/ubuntu_system/ubuntu_system.sh -O -)"
       ;;
     2)
-      # Opção 2: Instalar Ubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/update_system.sh -O -)"
+      # Opção 2. Installar Flatpak
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_flapak/install_flapak.sh -O -)"
       ;;
     3)
-      # Opção 2: Instalar Fontes Microsoft, Htop, IPcalc, Gparted, Neofetch, FFmpeg e Habilitar x86
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_fonts_microsoft.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_htop.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ipcalc.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_gparted.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_neofetch.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_ffmpeg.sh -O -)"
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/enable_x86.sh -O -)"
+      # Opção 3. Instalar Ubuntu Restricted Extras
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_ubuntu_restricted_extras/install_ubuntu_restricted_extras.sh -O -)"
       ;;
     4)
-      # Opção 2: Instalar Git
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_git.sh -O -)"
+      # Opção 4. Instalar Google Chrome
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_google_chrome/install_google_chrome.sh -O -)"
       
       ;;
     5)
-      # Opção 2: Instalar Virt-Manager
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virt_manager.sh -O -)"
+      # Opção 5. Disable Keyring Popup
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/disable_keyring_popup/disable_keyring_popup.sh -O -)"
       
       ;;
     6)
-      # Opção 2: Instalar VirtualBox
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_virtualbox.sh -O -)"
+      # Opção 6. Install Steam
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_steam/install_steam.sh -O -)"
       
       ;;
     7)
-      # Opção 2: Instalar Google Chrome
-      bash -c "$(wget https://raw.githubusercontent.com/cesarbrunoms/linux/main/ubuntu/scripts/script_files/install_google_chrome.sh -O -)"
+      # Opção 7. Instalar Git
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_git/install_git_ubuntu.sh -O -)"
       
       ;;
     8)
-      # Opção 3: Sair do script
+      # Opção 8. Instalar Virt-Manager
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_virt_manager/install_virt_manager.sh -O -)"
+      
+      ;;
+    9)
+      # Opção 9. Instalar VirtualBox
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_virtualbox/install_virtualbox.sh -O -)"
+      
+      ;;
+    10)
+      # Opção 10. Installar TLP Battery
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_tlp_battery/install_tlp_battery.sh -O -)"
+      
+      ;;
+    q)
+      # Opção q: Sair do script
       break
       ;;
     *)
