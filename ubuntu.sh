@@ -31,7 +31,7 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/ubuntu_system/ubuntu_system.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/ubuntu_system/update_system.sh -O -)"
       ;;
     2)
       # Opção 2. Installar Flatpak
