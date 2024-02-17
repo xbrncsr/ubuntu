@@ -19,7 +19,7 @@ sudo sed -i '/^\/\/Unattended-Upgrade::Remove-Unused-Dependencies/s/^\/\///' /et
 sudo sed -i '/^\/\/Unattended-Upgrade::Automatic-Reboot/s/^\/\///' /etc/apt/apt.conf.d/50unattended-upgrades
 
 # Definir horário do reboot
-//Unattended-Upgrade::Automatic-Reboot-Time "02:00";
+sudo sed -i '/^\/\/Unattended-Upgrade::Automatic-Reboot-Time/s/^\/\///' /etc/apt/apt.conf.d/50unattended-upgrades
 
 # Para aplicar as configurações
 sudo dpkg-reconfigure -plow unattended-upgrades
