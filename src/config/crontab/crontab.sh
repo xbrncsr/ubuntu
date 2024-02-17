@@ -22,4 +22,4 @@
 #
 # ========== EXEMPLO AUTOMATICO
 # $a: Indica ao sed para inserir na ultima linha.
-sudo sed -i '$a 10  16  *   *   *   root    sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y && snap refresh && sudo reboot now' /etc/crontab
+sudo sed -i '$a 10  16  *   *   *   root    sudo apt update && sudo apt upgrade -y && sudo apt full-upgrade -y && sudo snap refresh && sudo reboot now' /etc/crontab
