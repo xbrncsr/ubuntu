@@ -31,53 +31,53 @@ while true; do
   case $choice in
     1)
       # Opção 1: Atualizar o sistema
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/ubuntu_system/update_system.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/config/ubuntu_system/update_system.sh -O -)"
       ;;
     2)
       # Opção 2. Installar Flatpak
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_flapak/install_flapak.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_flapak/install_flapak.sh -O -)"
       ;;
     3)
       # Opção 3. Instalar Ubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_ubuntu_restricted_extras/install_ubuntu_restricted_extras.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_ubuntu_restricted_extras/install_ubuntu_restricted_extras.sh -O -)"
       ;;
     4)
       # Opção 4. Instalar Kubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_kubuntu_restricted_extras/install_kubuntu_restricted_extras.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_kubuntu_restricted_extras/install_kubuntu_restricted_extras.sh -O -)"
       ;;
     5)
       # Opção 5. Instalar Google Chrome
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_google_chrome/install_google_chrome.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_google_chrome/install_google_chrome.sh -O -)"
       
       ;;
     6)
       # Opção 6. Disable Keyring Popup
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/disable_keyring_popup/disable_keyring_popup.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/config/disable_keyring_popup/disable_keyring_popup.sh -O -)"
       
       ;;
     7)
       # Opção 7. Install Steam
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_steam/install_steam.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_steam/install_steam.sh -O -)"
       
       ;;
     8)
       # Opção 8. Instalar Git
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_git/install_git_ubuntu.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_git/install_git_ubuntu.sh -O -)"
       
       ;;
     9)
       # Opção 9. Instalar Virt-Manager
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_virt_manager/install_virt_manager.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_virt_manager/install_virt_manager.sh -O -)"
       
       ;;
     10)
       # Opção 10. Instalar VirtualBox
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_virtualbox/install_virtualbox.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_virtualbox/install_virtualbox.sh -O -)"
       
       ;;
     11)
       # Opção 11. Installar TLP Battery
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/install_tlp_battery/install_tlp_battery.sh -O -)"
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_tlp_battery/install_tlp_battery.sh -O -)"
       
       ;;
     q)
