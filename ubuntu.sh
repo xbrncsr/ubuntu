@@ -6,7 +6,8 @@ mostrar_menu() {
   echo "+---------------------------------------------+"
   echo "|       SELECIONE UMA OPÇÃO:                  |"
   echo "|   1. Atualizar o sistema                    |"
-  echo "|   2. Installar Flatpak                      |"
+  echo "|   2A. Instalar APPs Snaps                   |"
+  echo "|   2B. Instalar APPs Flatpak                 |"
   echo "|   3. Instalar Ubuntu Restricted Extras      |"
   echo "|   4. Instalar Kubuntu Restricted Extras     |"
   echo "|   5. Instalar Google Chrome                 |"
@@ -34,7 +35,11 @@ while true; do
       # Opção 1: Atualizar o sistema
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/config/ubuntu_system/update_system.sh -O -)"
       ;;
-    2)
+    2A)
+      # Opção 2. Installar APPs Snaps
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/apps_snaps.sh -O -)"
+      ;;
+    2B)
       # Opção 2. Installar Flatpak
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_flapak/install_flapak.sh -O -)"
       ;;

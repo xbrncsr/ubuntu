@@ -5,14 +5,14 @@ mostrar_menu() {
   clear  
   echo "+---------------------------------------------+"
   echo "|       SELECIONE UMA OPÇÃO:                  |"
-  echo "|   1. Atualizar Snaps                        |"
-  echo "|   13. Instalar Bitwarden - Snap             |"
-  echo "|   13. Instalar Shotcut - Snap               |"
-  echo "|   13. Instalar Spotify - Snap               |"
-  echo "|   13. Instalar Telegram - Snap              |"
-  echo "|   13. Instalar VLC - Snap                   |"
-  echo "|   13. Instalar VSCode - Snap                |"
-  echo "|   13. Instalar WinBox - Snap                |"
+  echo "|   1. Atualizar o Sistema                    |"
+  echo "|   2. Instalar Bitwarden - Snap              |"
+  echo "|   3. Instalar Shotcut - Snap                |"
+  echo "|   4. Instalar Spotify - Snap                |"
+  echo "|   5. Instalar Telegram - Snap               |"
+  echo "|   6. Instalar VLC - Snap                    |"
+  echo "|   7. Instalar VSCode - Snap                 |"
+  echo "|   8. Instalar WinBox - Snap                 |"
   echo "|   q. Sair                                   |"
   echo "+---------------------------------------------+"
 
@@ -31,62 +31,37 @@ while true; do
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/config/ubuntu_system/update_system.sh -O -)"
       ;;
     2)
-      # Opção 2. Installar Flatpak
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_flapak/install_flapak.sh -O -)"
+      # Opção 2. Installar Bitwarden
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_bitwarden_snap/install_bitwarden_snap.sh -O -)"
       ;;
     3)
-      # Opção 3. Instalar Ubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_ubuntu_restricted_extras/install_ubuntu_restricted_extras.sh -O -)"
+      # Opção 3. Instalar Shotcut
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_shotcut_snap/install_shotcut_snap.sh -O -)"
       ;;
     4)
-      # Opção 4. Instalar Kubuntu Restricted Extras
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_kubuntu_restricted_extras/install_kubuntu_restricted_extras.sh -O -)"
+      # Opção 4. Instalar Spotify
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_spotify_snap/install_spotify_snap.sh -O -)"
       ;;
     5)
-      # Opção 5. Instalar Google Chrome
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_google_chrome/install_google_chrome.sh -O -)"
+      # Opção 5. Instalar Telegram
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_telegram_snap/install_telegram_snap.sh -O -)"
       
       ;;
     6)
-      # Opção 6. Disable Keyring Popup
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/config/disable_keyring_popup/disable_keyring_popup.sh -O -)"
+      # Opção 6. Instalar VLC
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_vlc_snaps/install_vlc_snaps.sh -O -)"
       
       ;;
     7)
-      # Opção 7. Install Steam
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_steam/install_steam.sh -O -)"
+      # Opção 7. Install VSCode
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_vscode_snap/install_vscode_snap.sh -O -)"
       
       ;;
     8)
-      # Opção 8. Instalar Git
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_git/install_git_ubuntu.sh -O -)"
+      # Opção 8. Instalar WinBox
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install_apps_snaps/install_winbox_snap/install_winbox_snap.sh -O -)"
       
-      ;;
-    9)
-      # Opção 9. Instalar Virt-Manager
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_virt_manager/install_virt_manager.sh -O -)"
-      
-      ;;
-    10)
-      # Opção 10. Instalar VirtualBox
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_virtualbox/install_virtualbox.sh -O -)"
-      
-      ;;
-    11)
-      # Opção 11. Installar TLP Battery
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_tlp_battery/install_tlp_battery.sh -O -)"
-      
-      ;;
-    12)
-      # Opção 12. Installar Dropbox
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_dropbox/install_dropbox.sh -O -)"
-      
-      ;;
-    13)
-      # Opção 12. Installar VSCode - Snap
-      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_vscode_snap/install_vscode_snap.sh -O -)"
-      
-      ;;
+      ;;    
     q)
       # Opção q: Sair do script
       break
