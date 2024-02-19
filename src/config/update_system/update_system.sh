@@ -4,6 +4,9 @@
 sudo apt update
 
 #
+sudo snap refresh
+
+#
 sudo apt upgrade -y
 
 #

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-# Install VSCode via Snap
+# Install VSCode - Snap
 sudo snap install code --classic
