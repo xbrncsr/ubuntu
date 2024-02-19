@@ -16,6 +16,8 @@ mostrar_menu() {
   echo "|   9. Instalar Virt-Manager                  |"
   echo "|   10. Instalar VirtualBox                   |"
   echo "|   11. Installar TLP Battery                 |"
+  echo "|   12. Instalar Dropbox                      |"
+  echo "|   13. Instalar VSCode - Snap                |"
   echo "|   q. Sair                                   |"
   echo "+---------------------------------------------+"
 
@@ -78,6 +80,11 @@ while true; do
     11)
       # Opção 11. Installar TLP Battery
       bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_tlp_battery/install_tlp_battery.sh -O -)"
+      
+      ;;
+    12)
+      # Opção 11. Installar TLP Battery
+      bash -c "$(wget https://raw.githubusercontent.com/xbrncsr/ubuntu/main/src/install/install_dropbox/install_dropbox.sh -O -)"
       
       ;;
     q)
