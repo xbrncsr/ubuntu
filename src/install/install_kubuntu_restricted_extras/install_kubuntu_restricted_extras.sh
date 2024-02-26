@@ -4,6 +4,7 @@
 sudo apt install -y kubuntu-restricted-extras
 
 #
+sudo apt install -y ttf-mscorefonts-installer
 sudo apt install -y fonts-roboto fonts-cascadia-code fonts-firacode
 
 # Compressed files support
